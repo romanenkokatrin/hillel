@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+</head>
+
+<body>
+
+  <h1>Поиск</h1>
+
+  <div>
+    <a href="registration.html">Регистрация</a>
+    <a href="authorization.html">Авторизация</a>
+    <a href="search.html">Поиск</a>
+    <a href="../index.html">Главная</a>
+  </div>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <label for="kyzov">Тип кузова</label>
+        <select name="kyzov" id="kyzov">
+          <option value="all">Все типы</option>
+          <option value="sedan">Седан</option>
+          <option value="limousine">Лимузин</option>
+          <option value="cabriolet">Кабриолет</option>
+          <option value="coupe">Купе</option>
+          <option value="hatchback">Хетчбек</option>
+          <option value="van">Фургон</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <label for="marka-avto">Марка авто</label>
+        <select name="marka-avto" id="marka-avto">
+          <option value="all">Все марки</option>
+          <option value="porsche">Porsche</option>
+          <option value="audi">Audi</option>
+          <option value="lexus">Lexus</option>
+          <option value="skoda">Skoda</option>
+          <option value="bmw">BMW</option>
+          <option value="ford">Ford</option>
+          <option value="renault">Renault</option>
+          <option value="tesla">Tesla</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <label for="strana">Страна производитель</label>
+        <select name="strana" id="strana">
+          <option value="all">Все страны</option>
+          <option value="germany">Германия</option>
+          <option value="poland">Польша</option>
+          <option value="china">Китай</option>
+          <option value="france">Фрнация</option>
+          <option value="usa">США</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена</legend>
+
+      <div class="d-inline">
+        <label for="cena-ot">от</label>
+        <input type="number" name="cena-ot" id="cena-ot">
+      </div>
+
+      <div class="d-inline">
+        <label for="cena-do">до</label>
+        <input type="number" name="cena-do" id="cena-do">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Год выпуска:</legend>
+
+      <div>
+        <label for="year-ot">от</label>
+        <select name="year-ot" id="year-ot">
+          <option value="2015">2005</option>
+          <option value="2015">2006</option>
+          <option value="2015">2007</option>
+          <option value="2015">2008</option>
+          <option value="2015">2009</option>
+          <option value="2015">2010</option>
+          <option value="2015">2011</option>
+          <option value="2015">2012</option>
+          <option value="2015">2013</option>
+          <option value="2015">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="year-do">до</label>
+        <select name="year-do" id="year-do">
+          <option value="2015">2005</option>
+          <option value="2015">2006</option>
+          <option value="2015">2007</option>
+          <option value="2015">2008</option>
+          <option value="2015">2009</option>
+          <option value="2015">2010</option>
+          <option value="2015">2011</option>
+          <option value="2015">2012</option>
+          <option value="2015">2013</option>
+          <option value="2015">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022" selected>2022</option>
+        </select>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Состояние авто:</legend>
+
+      <div>
+        <label for="bitaya">Битая</label>
+        <input type="checkbox" name="sostoyanie1" id="bitaya" value="bitaya">
+      </div>
+
+      <div>
+        <label for="kredit">В кредите</label>
+        <input type="checkbox" name="sostoyanie2" id="kredit" value="kredit">
+      </div>
+
+      <div>
+        <label for="trebuet-remonta">Требует ремонта</label>
+        <input type="checkbox" name="trebuet-remonta" id="trebuet-remonta" value="trebuet-remonta">
+      </div>
+
+      <div>
+        <label for="ne-rastomozenaya">Не разтоможенная</label>
+        <input type="checkbox" name="ne-rastomozenaya" id="ne-rastomozenaya" value="ne-rastomozenaya">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Тип топлива:</legend>
+
+      <div>
+        <label for="benzin">Бензин</label>
+        <input type="checkbox" name="toplivo1" id="benzin" value="benzin">
+      </div>
+
+      <div>
+        <label for="dizel">Дизель</label>
+        <input type="checkbox" name="toplivo2" id="dizel" value="dizel">
+      </div>
+
+      <div>
+        <label for="gaz">Газ</label>
+        <input type="checkbox" name="toplivo3" id="gaz" value="gaz">
+      </div>
+
+      <div>
+        <label for="gaz-benzin">Газ/бензин</label>
+        <input type="checkbox" name="toplivo4" id="gaz-benzin" value="gaz-benzin">
+      </div>
+
+      <div>
+        <label for="electro">Электро</label>
+        <input type="checkbox" name="toplivo5" id="electro" value="electro">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <label for="korobka">Тип коробки передач</label>
+        <select name="korobka" id="korobka">
+          <option value="another">Другая</option>
+          <option value="avto">Автомат</option>
+          <option value="manual">Ручная</option>
+          <option value="robotic">Роботизированая</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <label for="color">Цвет авто</label>
+        <select name="color" id="color">
+          <option value="another">Другой</option>
+          <option value="white">Белый</option>
+          <option value="beige">Бежевый</option>
+          <option value="brown">Коричневый</option>
+          <option value="red">Красный</option>
+          <option value="marsala">Марсалла</option>
+          <option value="orange">Оранжевый</option>
+          <option value="yellow">Желтый</option>
+          <option value="grey">Серый</option>
+          <option value="black">Черный</option>
+          <option value="grey">Зеленый</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Комфорт</legend>
+
+      <div>
+        <label for="panoramic-roof">Панарамная крыша</label>
+        <input type="checkbox" name="comf1" id="panoramic-roof" value="panoramic-roof">
+      </div>
+
+      <div>
+        <label for="сruisecontrol">Круиз-контроль</label>
+        <input type="checkbox" name="comf2" id="сruisecontrol" value="сruisecontrol">
+      </div>
+
+      <div>
+        <label for="heated-mirrors">Подогреа зеркал</label>
+        <input type="checkbox" name="comf3" id="heated-mirrors" value="heated-mirrors">
+      </div>
+
+      <div>
+        <label for="air-conditioner">Кондиционер</label>
+        <input type="checkbox" name="comf4" id="air-conditioner" value="air-conditioner">
+      </div>
+
+      <div>
+        <label for="seat-memory">Память сидений</label>
+        <input type="checkbox" name="comf5" id="seat-memory" value="seat-memory">
+      </div>
+
+      <div>
+        <label for="power-steering">Гидроусилитель руля</label>
+        <input type="checkbox" name="comf6" id="power-steering" value="power-steering">
+      </div>
+
+      <div>
+        <label for="on-board-computer">Бортовой компьютер</label>
+        <input type="checkbox" name="comf7" id="on-board-computer" value="on-board-computer">
+      </div>
+
+      <div>
+        <label for="keyless-entry-system">Система доступа без ключа</label>
+        <input type="checkbox" name="comf8" id="keyless-entry-system" value="keyless-entry-system">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <!-- <legend></legend> -->
+      <div>
+        <input type="submit" value="Применить">
+      </div>
+      <div>
+        <input type="reset" value="Сбросить">
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
